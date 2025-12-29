@@ -11,8 +11,8 @@
 }
 .img {
     /* Ограничиваем размер */
-    height:auto;
-    width: 400px;
+    flex: 1; /* Allow the image to grow and fill available space */
+    width: 100%;
     /* Border - Рамка */
     /* ТОЛЩИНА / СТИЛЬ / ЦВЕТ */
     border: 5px solid #333;
@@ -26,6 +26,7 @@
     /* Отступ сверху и снизу */
     margin-top: 20px;
     margin-bottom: 20px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
 /* Style for general elements */
 }
 body {
@@ -36,7 +37,8 @@ body {
 }
 .card {
     background-color: white;
-    width: 600px;
+    width: 90%; /* Width of the card */
+    max-width: 1000px; /* Maximum width of the card */
     /* The Maggic of Centering */
     margin: 0 auto;
     /* 0 - Отступы вокруг элемента */
@@ -56,7 +58,7 @@ body {
     text-align: center; /* Center the menu */
 }
 .menu a {
-    display: block;
+    display: block; /* Make the link a block element */
 
     background-color: #ff4500;
     color: white;
@@ -90,4 +92,18 @@ body {
 .ingredients li:hover {
     background-color:#333;
     transform: scale(1.02);
+}
+.content-row {
+    display: flex; /* Use flexbox for layout */
+    align-items:center; /* Center items vertically */
+    gap: 30px; /* Space between image and text */
+
+    margin-bottom: 20px; /* Space below the content row */
+     max-width: 50%; /* Limit the width of the content row */
+     height: auto; /* Adjust height automatically */
+     object-fit: cover; /* Ensure the image covers the area without distortion */   
+}
+.ingredients-info {
+    flex: 1; /* Allow the ingredients info to grow and fill available space */
+    min-width: 0;
 }
