@@ -1,0 +1,93 @@
+.main-title {
+    text-align:center;
+    color:beige;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:32px;
+}
+.ingredients {
+    padding: 20px;
+    border-radius: 10px;
+    list-style-position: inside;
+}
+.img {
+    /* Ограничиваем размер */
+    height:auto;
+    width: 400px;
+    /* Border - Рамка */
+    /* ТОЛЩИНА / СТИЛЬ / ЦВЕТ */
+    border: 5px solid #333;
+    /* ЗАКРУГЛЯЕМ УГЛЫ РАМКИ */
+    border-radius: 20px; 
+    /* ВНУТРЕННИЙ ОТСТУП */
+    /* ЭТО РАССТОЯНИЕ ОТ КАРТИНКИ ДО РАМКИ */
+    padding: 5px;
+    background-color: beige;
+    /* MARGIN - Отступы вокруг элемента */
+    /* Отступ сверху и снизу */
+    margin-top: 20px;
+    margin-bottom: 20px;
+/* Style for general elements */
+}
+body {
+    background-color: #f3f4f6;
+    font-family: sans-serif; 
+    color:#333;  /* Dark gray TEXT for better readability */
+/* Style for card , which in body */
+}
+.card {
+    background-color: white;
+    width: 600px;
+    /* The Maggic of Centering */
+    margin: 0 auto;
+    /* 0 - Отступы вокруг элемента */
+    /* auto - браузер сам делит свободное место слева и справа поровну */
+
+    padding: 40px; /* Inner Spacing */
+    border-radius: 20px; /* Rounded Corners */
+
+    /* The Shadow to make card like fliyng */
+    /* свдиг-x | свдиг-y | размытие | цвет */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+
+}
+.menu {
+    list-style: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center the menu */
+}
+.menu a {
+    display: block;
+
+    background-color: #ff4500;
+    color: white;
+    
+    padding: 15px 30px; /* Vertical and horizontal padding */
+    margin-bottom: 15px; /* Space between buttons */
+    border-radius: 40px; /* Rounded corners */
+    text-decoration: none; /* Remove UNDERLINES OF LINKS */
+    font-weight: bold; /* Bold text */
+    font-size: 18px; /* Larger text */
+
+    /* Transition effect (animation) */
+    transition: background-color 0.3s;
+}
+    /* The magic of hover(наведении мышки) effect */
+.menu a:hover {
+        background-color: #333; /* Dark background on hover */
+        transform: scale(1.02); /* Slightly enlarge the button */
+}
+.steps {
+    padding: 10px;
+    border-radius: 10px;
+    list-style-position: inside;
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+.steps li:hover {
+    background-color:#333;
+    transform: scale(1.02);
+}
+.ingredients li:hover {
+    background-color:#333;
+    transform: scale(1.02);
+}
